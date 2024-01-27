@@ -1,0 +1,200 @@
+/* WasteDetails.css or your component-specific stylesheet */
+.waste-details-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto; /* Add scrollbar for vertical overflow */
+  max-height: calc(100vh - 80px); /* Adjust the max-height as needed to avoid overlapping with the sidebar */
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto; /* Add scrollbar for horizontal overflow */
+}
+
+.category-row {
+  display: flex;
+  margin-bottom: 20px; /* Add margin to separate rows */
+}
+
+.category-card {
+  flex: 0 0 auto; /* Prevent cards from shrinking */
+  margin-right: 10px; /* Add margin to separate cards */
+  border: 1px solid #ccc; /* Add border for styling */
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  /* overflow: hidden;  */
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(1);
+  opacity: 1.0;
+  z-index: -1;
+  background-blend-mode: lighten;
+}
+
+.category-card:hover {
+  transform: scale(1.01); /* Scale up the entire card on hover */
+}
+
+/* Add media query for responsiveness, adjust as needed */
+@media (max-width: 768px) {
+  .category-row {
+    flex-direction: column; /* Stack cards vertically on small screens */
+  }
+
+  .card-container {
+    overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
+  }
+}
+
+.plastic-card {
+  position: relative;
+  background: linear-gradient(rgba(26, 25, 25, 0.6), rgba(83, 82, 82, 0.6))  }
+ 
+ .plastic-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/plasticimg.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1.); 
+  opacity: 1.0; 
+   z-index: -1; 
+    background-blend-mode: lighten; 
+ }
+
+   
+ .paper-card {
+  position: relative;
+  background: linear-gradient(rgba(26, 25, 25, 0.6), rgba(83, 82, 82, 0.6))   }
+ 
+ .paper-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/paperimg.jpeg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(1.); 
+  opacity: 1.0; 
+   z-index: -1; 
+    background-blend-mode: lighten; 
+ }
+  .clothes-card {
+    position: relative;
+    background: linear-gradient(rgba(26, 25, 25, 0.6), rgba(83, 82, 82, 0.6))   }
+   
+   .clothes-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/clothesimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.2); 
+    opacity: 1.0; 
+     z-index: -1; 
+      background-blend-mode: lighten; 
+   }
+
+   .ewaste-card {
+    position: relative;
+    background: linear-gradient(rgba(26, 25, 25, 0.6), rgba(83, 82, 82, 0.6))   }
+   
+   .ewaste-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/ewasteimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.); 
+    opacity: 1.0; 
+     z-index: -1; 
+      background-blend-mode: lighten; 
+   }
+
+   .wood-card {
+    position: relative;
+    background: linear-gradient(rgba(26, 25, 25, 0.6), rgba(83, 82, 82, 0.6))   }
+   
+   .wood-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/woodimg.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.5); 
+    opacity: 1.0; 
+     z-index: -1; 
+      background-blend-mode: lighten; 
+   }
+  
+  
+   
+  .clothes-card,
+   .wood-card,
+   .ewaste-card,
+   .paper-card,
+   .plastic-card {
+    background-color: rgba(44, 33, 33, 0.5); /* Set the background color to a slightly transparent white */
+    padding: 20px;
+  }
+  
+  .clothes-card h1,
+  .ewaste-card h1,
+  .wood-card h1,
+  .paper-card h1,
+  .plastic-card h1 {
+    color:black; /* Use a higher contrast color for the text */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #pp{
+    min-width: 150px; /* Set a minimum width for the buttons */
+    width: auto; /* Allow the width to adjust based on content */
+    height: 50px;
+  }
+  
+  .custom-light-green {
+    background-color: #1cdb39;
+    color: #000;
+  }
+
+  .success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+  }

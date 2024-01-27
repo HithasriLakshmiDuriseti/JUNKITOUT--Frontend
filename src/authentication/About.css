@@ -1,0 +1,38 @@
+.about-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-content {
+  width: 300px;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content img {
+  width: 100%;
+  height: 200px;   object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-content-inner {
+  padding: 16px;
+  text-align: left;
+}
+
+.card-content-inner h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    width: 100%;
+  }
+}

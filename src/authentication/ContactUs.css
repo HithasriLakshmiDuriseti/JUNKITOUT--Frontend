@@ -1,0 +1,105 @@
+/* ContactUs.css */
+
+.contact-us-root {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-us-root h1 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-us-root .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-us-root .card {
+    flex: 1;
+    width: 48%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .contact-us-root .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-root .card p {
+    flex: 1;
+  }
+  
+  .contact-us-root .button-container {
+    margin-top: auto;
+  }
+  
+  .contact-us-root button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-us-root button:hover {
+    background-color: #2980b9;
+  }
+  
+  .contact-us-root .form-container,
+  .contact-us-root .faq-container,
+  .contact-us-root .ask-question-container {
+    margin-top: 20px;
+  }
+  
+  .contact-us-root .form-container form,
+  .contact-us-root .ask-question-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-root .form-container button,
+  .contact-us-root .ask-question-container button {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-us-root .form-container button:hover,
+  .contact-us-root .ask-question-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  .contact-us-root .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-root .question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-us-root .arrow-icon {
+    cursor: pointer;
+  }
+  
+  .contact-us-root .ask-question-container textarea {
+    height: 100px;
+  }
+  

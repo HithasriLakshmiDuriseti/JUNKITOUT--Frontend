@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    
+  }
+  .container{
+    display: flex;
+    
+  }
+  main{
+    width: 100%;
+    padding: 20px;
+    margin-left: 150px;
+  }
+  /* body{
+    overflow: hidden;
+  } */
+  .main-content {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+  .sidebar{
+    background: #000;
+    color: #fff;
+    height:100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+  }
+  .top_section{
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+  }
+  .logo{
+    font-size: 25px;
+  }
+  .bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap:20px;
+    transition: all 0.2s;
+    text-decoration: none;
+    padding: 15px 25px;
+  }
+  .link:hover{
+    background:rgb(78, 230, 83);
+    color: #000;
+    transition: all 0.2s ;
+  }
+  .active{
+    background: rgb(78, 230, 83);
+    color:#000 ;
+  }
+  .link_text{
+    font-size: 20px;
+  }
+  
+  .waste-details-container {
+    margin: 20px;
+  }
+  
+  .category-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .category-card {
+    width: 48%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .category-card h5 {
+    font-size: 18px;
+  }
+  
+  .category-card p {
+    margin-bottom: 10px;
+  }
+  
+  .category-card a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 2px solid #3a27c8; 
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .category-card:hover,
+  .category-card.active {
+    border-color: #076e17; 
+  }   
+  
+  .category-card h5,
+  .category-card p {
+    margin-top: 15px; 
+  }
+  
+  .category-card .btn {
+    margin-top: 25px; 
+  }
+  
+  
+    .custom-light-green {
+      background-color: #1cdb39; 
+      color: #000; 
+    }
+  
+  
+  
+  

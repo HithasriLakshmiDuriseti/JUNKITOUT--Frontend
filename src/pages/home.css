@@ -1,0 +1,45 @@
+img{
+    border-radius: 5%;
+    margin: 50px;
+}
+img:hover{
+    height: 75%;
+    width: 75%;
+}
+.homepage{
+    padding: 25px;
+}
+
+/* home.css */
+.homepage {
+    overflow-x: hidden;
+    max-height: 100vh; /* Set maximum height to 100% of the viewport height */
+    overflow-y: auto; /* Allow vertical scrolling if content exceeds the height */
+    width: 111.75%;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  table img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    table {
+      display: block;
+    }
+  
+    table td {
+      display: block;
+      text-align: center;
+    }
+  
+    table td img {
+      margin: 20px 0;
+    }
+  }
+  
